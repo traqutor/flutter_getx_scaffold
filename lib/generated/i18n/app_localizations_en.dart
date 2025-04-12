@@ -21,32 +21,32 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsTitle => 'Settings Title';
 
   @override
-  String get notificationsTitle => 'notificationsTitle';
+  String get notificationsTitle => 'Notifications Title';
 
   @override
-  String get themeSettingsTitle => 'themeSettingsTitle';
+  String get themeSettingsTitle => 'Theme Settings Title';
 
   @override
-  String get themeSettingsSystemDescription => 'themeSettingsSystemDescription';
+  String get themeSettingsSystemDescription => 'Theme Settings System Description';
 
   @override
-  String get themeSettingsLight => 'themeSettingsLight';
+  String get themeSettingsLight => 'Theme Settings Light';
 
   @override
-  String get themeSettingsLightDescription => 'themeSettingsLightDescription';
+  String get themeSettingsLightDescription => 'Theme Settings Light Description';
 
   @override
-  String get themeSettingsDark => 'themeSettingsDark';
+  String get themeSettingsDark => 'Theme Settings Dark';
 
   @override
-  String get themeSettingsSystem => 'themeSettingsSystem';
+  String get themeSettingsSystem => 'Theme Settings System';
 
   @override
-  String get notificationsEnable => 'notificationsEnable';
+  String get notificationsEnable => 'Notifications Enable';
 
   @override
-  String get themeSettingsDarkDescription => 'themeSettingsDarkDescription';
+  String get themeSettingsDarkDescription => 'Theme Settings Dark Description';
 
   @override
-  String get languageSettingsTitle => 'languageSettingsTitle';
+  String get languageSettingsTitle => 'Language Settings Title';
 }

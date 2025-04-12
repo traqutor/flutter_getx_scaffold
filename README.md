@@ -42,3 +42,51 @@ Notifications toggle
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+## Application Structure
+
+The structure of the merged application:
+
+```
+lib/
+├── core/
+│   ├── di/
+│   │   └── dependency_injection.dart    # Dependency injection setup
+│   ├── routes/
+│   │   ├── app_pages.dart               # Route definitions 
+│   │   └── app_routes.dart              # Route name constants
+│   ├── theme/
+│   │   └── app_theme.dart               # Theme configuration
+│   ├── translations/
+│   │   ├── app_translations.dart        # Translation setup
+│   │   ├── en_us.dart                   # English translations
+│   │   └── pl_pl.dart                   # Polish translations
+│   └── utils/                           # Utility functions and helpers
+├── features/
+│   ├── home/
+│   │   ├── controllers/
+│   │   │   └── home_controller.dart     # Home screen controller
+│   │   ├── views/
+│   │   │   └── home_view.dart           # Home screen UI
+│   │   └── widgets/
+│   │       └── feature_card.dart        # Reusable feature card widget
+│   ├── settings/
+│   │   ├── controllers/
+│   │   │   └── settings_controller.dart # Settings controller
+│   │   └── views/
+│   │       └── settings_view.dart       # Settings screen UI
+│   ├── not_found/
+│   │   └── views/
+│   │       └── not_found_view.dart      # 404 page
+│   ├── seo/                             # SEO features from first app
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── views/
+│   │   └── widgets/
+│   └── ble/                             # BLE features from second app
+│       ├── controllers/
+│       ├── models/
+│       ├── views/
+│       └── widgets/
+└── main.dart                            # Application entry point

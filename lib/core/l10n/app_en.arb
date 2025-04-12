@@ -1,7 +1,7 @@
 {
   "appTitle": "[Title]",
   "@appTitle": {
-    "description": "The title of the SEO Electronics Immobilizer Application!!!"
+    "description": "The app title"
   },
   "settingsLabel": "Settings",
   "@settingsLabel": {
@@ -15,44 +15,44 @@
   "@settingsTitle": {
     "description": "The Settings Title"
   },
-  "notificationsTitle": "notificationsTitle",
+  "notificationsTitle": "Notifications Title",
   "@notificationsTitle": {
-    "description": "The "
+    "description": "The Notifications Title"
   },
-  "themeSettingsTitle": "themeSettingsTitle",
+  "themeSettingsTitle": "Theme Settings Title",
   "@themeSettingsTitle": {
     "description": "The "
   },
-  "themeSettingsSystemDescription": "themeSettingsSystemDescription",
+  "themeSettingsSystemDescription": "Theme Settings System Description",
   "@themeSettingsSystemDescription": {
     "description": "The "
   },
-  "themeSettingsLight": "themeSettingsLight",
+  "themeSettingsLight": "Theme Settings Light",
   "@themeSettingsLight": {
     "description": "The "
   },
-  "themeSettingsLightDescription": "themeSettingsLightDescription",
+  "themeSettingsLightDescription": "Theme Settings Light Description",
   "@themeSettingsLightDescription": {
     "description": "The "
   },
-  "themeSettingsDark": "themeSettingsDark",
+  "themeSettingsDark": "Theme Settings Dark",
   "@themeSettingsDark": {
     "description": "The "
   },
-  "themeSettingsSystem": "themeSettingsSystem",
+  "themeSettingsSystem": "Theme Settings System",
   "@themeSettingsSystem": {
-    "description": "themeSettingsSystem"
+    "description": "Theme Settings System"
   },
-  "notificationsEnable": "notificationsEnable",
+  "notificationsEnable": "Notifications Enable",
   "@notificationsEnable": {
     "description": "The "
   },
-  "themeSettingsDarkDescription": "themeSettingsDarkDescription",
+  "themeSettingsDarkDescription": "Theme Settings Dark Description",
   "@themeSettingsDarkDescription": {
-    "description": "themeSettingsDarkDescription"
+    "description": "Theme Settings Dark Description"
   },
-  "languageSettingsTitle": "languageSettingsTitle",
+  "languageSettingsTitle": "Language Settings Title",
   "@languageSettingsTitle": {
-    "description": "languageSettingsTitle"
+    "description": "Language Settings Title"
   }
 }

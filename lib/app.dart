@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           title: 'GetX App',
           debugShowCheckedModeBanner: false,
-          themeMode: controller.themeMode,
-          locale: _parseLocale(controller.language),
+          themeMode: controller.themeMode.value,
+          locale: _parseLocale(controller.language.value),
           theme: ThemeData.light(),
           darkTheme: ThemeData.dark(),
 

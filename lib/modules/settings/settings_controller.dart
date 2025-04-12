@@ -5,9 +5,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 class SettingsController extends GetxController {
   final _prefs = Get.find<SharedPreferences>();
 
-  ThemeMode themeMode = ThemeMode.system;
-  String language = 'en_US';
-  bool notificationsEnabled = true;
+  var themeMode = ThemeMode.system.obs;
+  var language = 'en_US'.obs;
+  var notificationsEnabled = true;
 
   static const String _themeModeKey = 'themeMode';
   static const String _languageKey = 'language';
@@ -22,13 +22,13 @@ class SettingsController extends GetxController {
   void loadSettings() {
     final savedTheme = _prefs.getString(_themeModeKey);
     if (savedTheme != null) {
-      themeMode = _parseTheme(savedTheme);
+      themeMode.value = _parseTheme(savedTheme);
     }
 
     final savedLanguage = _prefs.getString(_languageKey);
     if (savedLanguage != null) {
-      language = savedLanguage;
-      updateLocale(language);
+      language.value = savedLanguage;
+      updateLocale(language.value);
     }
 
     final savedNotifications = _prefs.getBool(_notificationsKey);
@@ -40,14 +40,14 @@ class SettingsController extends GetxController {
   }
 
   Future<void> updateThemeMode(ThemeMode mode) async {
-    themeMode = mode;
+    themeMode.value = mode;
     await _prefs.setString(_themeModeKey, _themeString(mode));
     Get.changeThemeMode(mode);
     update(); // Notify GetBuilder
   }
 
   Future<void> updateLanguage(String languageCode) async {
-    language = languageCode;
+    language.value = languageCode;
     await _prefs.setString(_languageKey, languageCode);
     updateLocale(languageCode);
     update(); // Notify GetBuilder

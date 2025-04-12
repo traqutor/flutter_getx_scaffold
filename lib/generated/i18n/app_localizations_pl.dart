@@ -12,41 +12,41 @@ class AppLocalizationsPl extends AppLocalizations {
   String get appTitle => '[Nazwa]';
 
   @override
-  String get settingsLabel => 'Settings';
+  String get settingsLabel => 'Ustawienia';
 
   @override
   String get helloWorld => 'Hello World!';
 
   @override
-  String get settingsTitle => 'Settings Title';
+  String get settingsTitle => 'Ustawienia';
 
   @override
-  String get notificationsTitle => 'notificationsTitle';
+  String get notificationsTitle => 'Powiadomienia';
 
   @override
-  String get themeSettingsTitle => 'themeSettingsTitle';
+  String get themeSettingsTitle => 'Wygląd';
 
   @override
-  String get themeSettingsSystemDescription => 'themeSettingsSystemDescription';
+  String get themeSettingsSystemDescription => 'Ustawienia wyglądu';
 
   @override
-  String get themeSettingsLight => 'themeSettingsLight';
+  String get themeSettingsLight => 'Wygląd jasny';
 
   @override
-  String get themeSettingsLightDescription => 'themeSettingsLightDescription';
+  String get themeSettingsLightDescription => 'Ustaw jasny';
 
   @override
-  String get themeSettingsDark => 'themeSettingsDark';
+  String get themeSettingsDark => 'Ustawienia ciemne';
 
   @override
-  String get themeSettingsSystem => 'themeSettingsSystem';
+  String get themeSettingsSystem => 'Ustwienia systemowe';
 
   @override
-  String get notificationsEnable => 'notificationsEnable';
+  String get notificationsEnable => 'Powiadomienia włączone';
 
   @override
-  String get themeSettingsDarkDescription => 'themeSettingsDarkDescription';
+  String get themeSettingsDarkDescription => 'Ustawienia ciemne opis';
 
   @override
-  String get languageSettingsTitle => 'languageSettingsTitle';
+  String get languageSettingsTitle => 'Ustawienia języka aplikacji';
 }

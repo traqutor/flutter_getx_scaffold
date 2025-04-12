@@ -95,7 +95,7 @@ abstract class AppLocalizations {
     Locale('pl')
   ];
 
-  /// The title of the SEO Electronics Immobilizer Application!!!
+  /// The app title
   ///
   /// In en, this message translates to:
   /// **'[Title]'**
@@ -119,64 +119,64 @@ abstract class AppLocalizations {
   /// **'Settings Title'**
   String get settingsTitle;
 
-  /// The
+  /// The Notifications Title
   ///
   /// In en, this message translates to:
-  /// **'notificationsTitle'**
+  /// **'Notifications Title'**
   String get notificationsTitle;
 
   /// The
   ///
   /// In en, this message translates to:
-  /// **'themeSettingsTitle'**
+  /// **'Theme Settings Title'**
   String get themeSettingsTitle;
 
   /// The
   ///
   /// In en, this message translates to:
-  /// **'themeSettingsSystemDescription'**
+  /// **'Theme Settings System Description'**
   String get themeSettingsSystemDescription;
 
   /// The
   ///
   /// In en, this message translates to:
-  /// **'themeSettingsLight'**
+  /// **'Theme Settings Light'**
   String get themeSettingsLight;
 
   /// The
   ///
   /// In en, this message translates to:
-  /// **'themeSettingsLightDescription'**
+  /// **'Theme Settings Light Description'**
   String get themeSettingsLightDescription;
 
   /// The
   ///
   /// In en, this message translates to:
-  /// **'themeSettingsDark'**
+  /// **'Theme Settings Dark'**
   String get themeSettingsDark;
 
-  /// themeSettingsSystem
+  /// Theme Settings System
   ///
   /// In en, this message translates to:
-  /// **'themeSettingsSystem'**
+  /// **'Theme Settings System'**
   String get themeSettingsSystem;
 
   /// The
   ///
   /// In en, this message translates to:
-  /// **'notificationsEnable'**
+  /// **'Notifications Enable'**
   String get notificationsEnable;
 
-  /// themeSettingsDarkDescription
+  /// Theme Settings Dark Description
   ///
   /// In en, this message translates to:
-  /// **'themeSettingsDarkDescription'**
+  /// **'Theme Settings Dark Description'**
   String get themeSettingsDarkDescription;
 
-  /// languageSettingsTitle
+  /// Language Settings Title
   ///
   /// In en, this message translates to:
-  /// **'languageSettingsTitle'**
+  /// **'Language Settings Title'**
   String get languageSettingsTitle;
 }
 

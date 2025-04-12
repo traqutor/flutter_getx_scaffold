@@ -1,57 +1,57 @@
 {
   "appTitle": "[Nazwa]",
   "@appTitle": {
-    "description": "The title of the SEO Electronics Immobilizer Application!!!"
+    "description": "Nazwa aplikacji"
   },
-  "settingsLabel": "Settings",
+  "settingsLabel": "Ustawienia",
   "@settingsLabel": {
-    "description": "The label text for Settings"
+    "description": "Ustawienia"
   },
   "helloWorld": "Hello World!",
   "@helloWorld": {
     "description": "The conventional newborn programmer greeting"
   },
-  "settingsTitle": "Settings Title",
+  "settingsTitle": "Ustawienia",
   "@settingsTitle": {
     "description": "The Settings Title"
   },
-  "notificationsTitle": "notificationsTitle",
+  "notificationsTitle": "Powiadomienia",
   "@notificationsTitle": {
-    "description": "The "
+    "description": "Powiadomienia"
   },
-  "themeSettingsTitle": "themeSettingsTitle",
+  "themeSettingsTitle": "Wygląd",
   "@themeSettingsTitle": {
-    "description": "The "
+    "description": "Wygląd"
   },
-  "themeSettingsSystemDescription": "themeSettingsSystemDescription",
+  "themeSettingsSystemDescription": "Ustawienia wyglądu",
   "@themeSettingsSystemDescription": {
     "description": "The "
   },
-  "themeSettingsLight": "themeSettingsLight",
+  "themeSettingsLight": "Wygląd jasny",
   "@themeSettingsLight": {
     "description": "The "
   },
-  "themeSettingsLightDescription": "themeSettingsLightDescription",
+  "themeSettingsLightDescription": "Ustaw jasny",
   "@themeSettingsLightDescription": {
     "description": "The "
   },
-  "themeSettingsDark": "themeSettingsDark",
+  "themeSettingsDark": "Ustawienia ciemne",
   "@themeSettingsDark": {
     "description": "The "
   },
-  "themeSettingsSystem": "themeSettingsSystem",
+  "themeSettingsSystem": "Ustwienia systemowe",
   "@themeSettingsSystem": {
     "description": "themeSettingsSystem"
   },
-  "notificationsEnable": "notificationsEnable",
+  "notificationsEnable": "Powiadomienia włączone",
   "@notificationsEnable": {
     "description": "The "
   },
-  "themeSettingsDarkDescription": "themeSettingsDarkDescription",
+  "themeSettingsDarkDescription": "Ustawienia ciemne opis",
   "@themeSettingsDarkDescription": {
     "description": "themeSettingsDarkDescription"
   },
-  "languageSettingsTitle": "languageSettingsTitle",
+  "languageSettingsTitle": "Ustawienia języka aplikacji",
   "@languageSettingsTitle": {
     "description": "languageSettingsTitle"
   }
