@@ -7,7 +7,7 @@ import 'package:flutter_getx_scaffold/modules/home/home_view.dart';
 part 'app_routes.dart';
 
 class AppPages {
-  static const initial = Routes.settings;
+  static const initial = Routes.home;
 
   static final routes = [
     GetPage(
