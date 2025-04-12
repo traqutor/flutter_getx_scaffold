@@ -1,5 +1,5 @@
 {
-  "appTitle": "SEO Electronics Immobilizer Application",
+  "appTitle": "[Title]",
   "@appTitle": {
     "description": "The title of the SEO Electronics Immobilizer Application!!!"
   },
@@ -10,9 +10,49 @@
   "helloWorld": "Hello World!",
   "@helloWorld": {
     "description": "The conventional newborn programmer greeting"
+  },
+  "settingsTitle": "Settings Title",
+  "@settingsTitle": {
+    "description": "The Settings Title"
+  },
+  "notificationsTitle": "notificationsTitle",
+  "@notificationsTitle": {
+    "description": "The "
+  },
+  "themeSettingsTitle": "themeSettingsTitle",
+  "@themeSettingsTitle": {
+    "description": "The "
+  },
+  "themeSettingsSystemDescription": "themeSettingsSystemDescription",
+  "@themeSettingsSystemDescription": {
+    "description": "The "
+  },
+  "themeSettingsLight": "themeSettingsLight",
+  "@themeSettingsLight": {
+    "description": "The "
+  },
+  "themeSettingsLightDescription": "themeSettingsLightDescription",
+  "@themeSettingsLightDescription": {
+    "description": "The "
+  },
+  "themeSettingsDark": "themeSettingsDark",
+  "@themeSettingsDark": {
+    "description": "The "
+  },
+  "themeSettingsSystem": "themeSettingsSystem",
+  "@themeSettingsSystem": {
+    "description": "themeSettingsSystem"
+  },
+  "notificationsEnable": "notificationsEnable",
+  "@notificationsEnable": {
+    "description": "The "
+  },
+  "themeSettingsDarkDescription": "themeSettingsDarkDescription",
+  "@themeSettingsDarkDescription": {
+    "description": "themeSettingsDarkDescription"
+  },
+  "languageSettingsTitle": "languageSettingsTitle",
+  "@languageSettingsTitle": {
+    "description": "languageSettingsTitle"
   }
 }
-
-
-
-

@@ -9,11 +9,44 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'SEO Electronics Immobilizer Application';
+  String get appTitle => '[Title]';
 
   @override
   String get settingsLabel => 'Settings';
 
   @override
   String get helloWorld => 'Hello World!';
+
+  @override
+  String get settingsTitle => 'Settings Title';
+
+  @override
+  String get notificationsTitle => 'notificationsTitle';
+
+  @override
+  String get themeSettingsTitle => 'themeSettingsTitle';
+
+  @override
+  String get themeSettingsSystemDescription => 'themeSettingsSystemDescription';
+
+  @override
+  String get themeSettingsLight => 'themeSettingsLight';
+
+  @override
+  String get themeSettingsLightDescription => 'themeSettingsLightDescription';
+
+  @override
+  String get themeSettingsDark => 'themeSettingsDark';
+
+  @override
+  String get themeSettingsSystem => 'themeSettingsSystem';
+
+  @override
+  String get notificationsEnable => 'notificationsEnable';
+
+  @override
+  String get themeSettingsDarkDescription => 'themeSettingsDarkDescription';
+
+  @override
+  String get languageSettingsTitle => 'languageSettingsTitle';
 }

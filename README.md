@@ -1,15 +1,43 @@
 # flutter_getx_scaffold
 
-A new Flutter project.
+Let's create a comprehensive scaffold that includes state management with GetX, a robust navigation system, and internationalization with flutter_localizations.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Here's a summary of what created:
 
-A few resources to get you started if this is your first Flutter project:
+Structured Application Architecture:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Feature-based organization for better code maintenance
+Core modules for shared functionality
+Separation of concerns (controllers, views, models)
+
+
+GetX Implementation:
+
+Reactive state management with .obs variables
+Dependency injection with Get.put() and Get.lazyPut()
+Navigation system with named routes
+
+
+Internationalization:
+
+Support for multiple languages (English, Polish)
+Translations managed through GetX
+
+
+Theme Management:
+
+Light and dark theme support
+Theme persistence using SharedPreferences
+
+
+Settings System:
+
+Theme selection
+Language selection
+Notifications toggle
+
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,

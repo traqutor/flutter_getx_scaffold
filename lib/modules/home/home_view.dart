@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_scaffold/generated/i18n/app_localizations.dart';
 import 'package:get/get.dart';
 import 'home_controller.dart';
 
@@ -9,9 +9,14 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('welcome'.tr)),
+      appBar: AppBar(
+        title: Text(
+          AppLocalizations.of(context)?.appTitle ?? 'Theme',
+          style: Theme.of(context).textTheme.titleLarge,
+        ),
+      ),
       body: Center(
-        child: Obx(() => Text('Counter: \${controller.count}')),
+        child: Obx(() => Text('Counter: ${controller.count.value}')),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: controller.increment,

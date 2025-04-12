@@ -98,7 +98,7 @@ abstract class AppLocalizations {
   /// The title of the SEO Electronics Immobilizer Application!!!
   ///
   /// In en, this message translates to:
-  /// **'SEO Electronics Immobilizer Application'**
+  /// **'[Title]'**
   String get appTitle;
 
   /// The label text for Settings
@@ -112,6 +112,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Hello World!'**
   String get helloWorld;
+
+  /// The Settings Title
+  ///
+  /// In en, this message translates to:
+  /// **'Settings Title'**
+  String get settingsTitle;
+
+  /// The
+  ///
+  /// In en, this message translates to:
+  /// **'notificationsTitle'**
+  String get notificationsTitle;
+
+  /// The
+  ///
+  /// In en, this message translates to:
+  /// **'themeSettingsTitle'**
+  String get themeSettingsTitle;
+
+  /// The
+  ///
+  /// In en, this message translates to:
+  /// **'themeSettingsSystemDescription'**
+  String get themeSettingsSystemDescription;
+
+  /// The
+  ///
+  /// In en, this message translates to:
+  /// **'themeSettingsLight'**
+  String get themeSettingsLight;
+
+  /// The
+  ///
+  /// In en, this message translates to:
+  /// **'themeSettingsLightDescription'**
+  String get themeSettingsLightDescription;
+
+  /// The
+  ///
+  /// In en, this message translates to:
+  /// **'themeSettingsDark'**
+  String get themeSettingsDark;
+
+  /// themeSettingsSystem
+  ///
+  /// In en, this message translates to:
+  /// **'themeSettingsSystem'**
+  String get themeSettingsSystem;
+
+  /// The
+  ///
+  /// In en, this message translates to:
+  /// **'notificationsEnable'**
+  String get notificationsEnable;
+
+  /// themeSettingsDarkDescription
+  ///
+  /// In en, this message translates to:
+  /// **'themeSettingsDarkDescription'**
+  String get themeSettingsDarkDescription;
+
+  /// languageSettingsTitle
+  ///
+  /// In en, this message translates to:
+  /// **'languageSettingsTitle'**
+  String get languageSettingsTitle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

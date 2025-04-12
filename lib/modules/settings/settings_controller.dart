@@ -1,50 +1,90 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-import 'settings_service.dart';
+class SettingsController extends GetxController {
+  final _prefs = Get.find<SharedPreferences>();
 
-/// A class that many Widgets can interact with to read user settings, update
-/// user settings, or listen to user settings changes.
-///
-/// Controllers glue Data Services to Flutter Widgets. The SettingsController
-/// uses the SettingsService to store and retrieve user settings.
-class SettingsController with ChangeNotifier {
-  SettingsController(this._settingsService);
+  ThemeMode themeMode = ThemeMode.system;
+  String language = 'en_US';
+  bool notificationsEnabled = true;
 
-  // Make SettingsService a private variable so it is not used directly.
-  final SettingsService _settingsService;
+  static const String _themeModeKey = 'themeMode';
+  static const String _languageKey = 'language';
+  static const String _notificationsKey = 'notifications';
 
-  // Make ThemeMode a private variable so it is not updated directly without
-  // also persisting the changes with the SettingsService.
-  late ThemeMode _themeMode;
-
-  // Allow Widgets to read the user's preferred ThemeMode.
-  ThemeMode get themeMode => _themeMode;
-
-  /// Load the user's settings from the SettingsService. It may load from a
-  /// local database or the internet. The controller only knows it can load the
-  /// settings from the service.
-  Future<void> loadSettings() async {
-    _themeMode = await _settingsService.themeMode();
-
-    // Important! Inform listeners a change has occurred.
-    notifyListeners();
+  @override
+  void onInit() {
+    super.onInit();
+    loadSettings();
   }
 
-  /// Update and persist the ThemeMode based on the user's selection.
-  Future<void> updateThemeMode(ThemeMode? newThemeMode) async {
-    if (newThemeMode == null) return;
+  void loadSettings() {
+    final savedTheme = _prefs.getString(_themeModeKey);
+    if (savedTheme != null) {
+      themeMode = _parseTheme(savedTheme);
+    }
 
-    // Do not perform any work if new and old ThemeMode are identical
-    if (newThemeMode == _themeMode) return;
+    final savedLanguage = _prefs.getString(_languageKey);
+    if (savedLanguage != null) {
+      language = savedLanguage;
+      updateLocale(language);
+    }
 
-    // Otherwise, store the new ThemeMode in memory
-    _themeMode = newThemeMode;
+    final savedNotifications = _prefs.getBool(_notificationsKey);
+    if (savedNotifications != null) {
+      notificationsEnabled = savedNotifications;
+    }
 
-    // Important! Inform listeners a change has occurred.
-    notifyListeners();
+    update(); // Notify GetBuilder
+  }
 
-    // Persist the changes to a local database or the internet using the
-    // SettingService.
-    await _settingsService.updateThemeMode(newThemeMode);
+  Future<void> updateThemeMode(ThemeMode mode) async {
+    themeMode = mode;
+    await _prefs.setString(_themeModeKey, _themeString(mode));
+    Get.changeThemeMode(mode);
+    update(); // Notify GetBuilder
+  }
+
+  Future<void> updateLanguage(String languageCode) async {
+    language = languageCode;
+    await _prefs.setString(_languageKey, languageCode);
+    updateLocale(languageCode);
+    update(); // Notify GetBuilder
+  }
+
+  void updateLocale(String code) {
+    final parts = code.split('_');
+    if (parts.length == 2) {
+      Get.updateLocale(Locale(parts[0], parts[1]));
+    }
+  }
+
+  Future<void> updateNotifications(bool enabled) async {
+    notificationsEnabled = enabled;
+    await _prefs.setBool(_notificationsKey, enabled);
+    update(); // Notify GetBuilder
+  }
+
+  ThemeMode _parseTheme(String value) {
+    switch (value) {
+      case 'light':
+        return ThemeMode.light;
+      case 'dark':
+        return ThemeMode.dark;
+      default:
+        return ThemeMode.system;
+    }
+  }
+
+  String _themeString(ThemeMode mode) {
+    switch (mode) {
+      case ThemeMode.light:
+        return 'light';
+      case ThemeMode.dark:
+        return 'dark';
+      default:
+        return 'system';
+    }
   }
 }
