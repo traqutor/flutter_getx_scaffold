@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'routes/app_pages.dart';
-import 'l10n/translations.dart';
+import 'core/l10n/translations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 class MyApp extends StatelessWidget {
