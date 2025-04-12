@@ -1,0 +1,14 @@
+{
+  "appTitle": "[Nazwa/tytuł plikacjji]",
+  "@appTitle": {
+    "description": "[The description !]"
+  },
+  "settingsLabel": "Ustawienia",
+  "@settingsLabel": {
+    "description": "Tekst ustawienia"
+  },
+  "helloWorld": "Witaj Świecie!",
+  "@helloWorld": {
+    "description": "Stardardowy tekst testowy nowego programisty"
+  }
+}
