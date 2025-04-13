@@ -54,10 +54,10 @@ class MyApp extends StatelessWidget {
 class CustomAdapterStateObserver extends NavigatorObserver {
   @override
   void didPush(Route route, Route? previousRoute) {
+    final log = Get.find<LoggerService>();
     super.didPush(route, previousRoute);
     if (route.settings.name == '/') {
-      // Start listening to Custom Module state changes when a new route is pushed
-      // Pop the current route if Custom Module is off
+      log.i('route push ${route.settings.name}');
       navigator?.pop();
     }
   }
@@ -67,6 +67,6 @@ class CustomAdapterStateObserver extends NavigatorObserver {
     final log = Get.find<LoggerService>();
     super.didPop(route, previousRoute);
     // Cancel the subscription when the route is popped
-    log.info('cancel subscriptions');
+    log.i('cancel subscriptions');
   }
 }

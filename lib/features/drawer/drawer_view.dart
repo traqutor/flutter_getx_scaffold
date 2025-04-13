@@ -4,10 +4,10 @@ import 'package:can_immo/generated/i18n/app_localizations.dart';
 import 'package:can_immo/features/settings/settings_controller.dart';
 
 /// Settings view that provides UI for modifying app settings
-class SettingsView extends GetView<SettingsController> {
-  const SettingsView({super.key});
+class DrawerView extends GetView<SettingsController> {
+  const DrawerView({super.key});
 
-  static const routeName = '/settings';
+  static const routeName = '/drawer';
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +18,7 @@ class SettingsView extends GetView<SettingsController> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: <Widget>[
+
           Obx(() {
             return SwitchListTile(
               title: Text(

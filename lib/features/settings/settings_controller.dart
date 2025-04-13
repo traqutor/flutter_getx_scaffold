@@ -7,6 +7,7 @@ class SettingsController extends GetxController {
   final _prefs = Get.find<SharedPreferences>();
   final log = Get.find<LoggerService>();
 
+  var isEmitting = false.obs;
   var themeMode = ThemeMode.system.obs;
   var language = 'en_US'.obs;
   var notificationsEnabled = true;
@@ -21,6 +22,12 @@ class SettingsController extends GetxController {
     loadSettings();
     log.demo();
   }
+
+  void startEmitting() => isEmitting.value = true;
+
+  void stopEmitting() => isEmitting.value = false;
+
+  void toggleEmitting() => isEmitting.toggle();
 
   void loadSettings() {
     final savedTheme = _prefs.getString(_themeModeKey);

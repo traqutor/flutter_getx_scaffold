@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:can_immo/features/home/home_controller.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:can_immo/theme/colors.dart';
 import 'package:can_immo/widgets/wave_circle.dart';
 import 'package:can_immo/widgets/seo_icon.dart';
+import 'package:can_immo/features/settings/settings_controller.dart';
 
 class WaveEmitter extends StatefulWidget {
   const WaveEmitter({super.key});
@@ -14,7 +14,7 @@ class WaveEmitter extends StatefulWidget {
 }
 
 class _WaveEmitterState extends State<WaveEmitter> {
-  final HomeController controller = Get.find<HomeController>();
+  final SettingsController controller = Get.find<SettingsController>();
   List<Widget> waves = [];
   Timer? _timer;
 

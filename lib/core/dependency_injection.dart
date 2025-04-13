@@ -1,8 +1,8 @@
 import 'package:logger/logger.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 // Import controllers
-import 'package:can_immo/features/home/home_controller.dart';
 import 'package:can_immo/features/settings/settings_controller.dart';
 
 /// Manages dependency injection throughout the app
@@ -15,12 +15,10 @@ class DependencyInjection {
 
     // Controllers - Non-persistent dependencies
     Get.lazyPut<SettingsController>(() => SettingsController(), fenix: true);
-    Get.lazyPut<HomeController>(() => HomeController(), fenix: true);
 
     // Additional injectable dependencies
     final loggerService = LoggerService();
     Get.put(loggerService, permanent: true);
-
   }
 
   static void dispose() {
@@ -30,35 +28,27 @@ class DependencyInjection {
 
 class LoggerService {
   var logger = Logger(printer: PrettyPrinter());
-  var loggerNoStack = Logger(printer: PrettyPrinter(methodCount: 0));
+
+  void d(String message) {
+    logger.d('[D] $message');
+  }
+
+  void i(String message) {
+    logger.i('[I] $message');
+  }
+
+  void w(String message) {
+    logger.w('[W] $message');
+  }
+
+  void error(String message) {
+    logger.e('[ERROR] $message');
+  }
 
   void demo() {
-    logger.d('Log message with 2 methods');
-
-    loggerNoStack.i('Info message');
-
-    loggerNoStack.w('Just a warning!');
-
-    logger.e('Error! Something bad happened', error: 'Test Error');
-
-    loggerNoStack.t({'key': 5, 'value': 'something'});
-
-    Logger(printer: SimplePrinter(colors: true)).t('boom');
-  }
-
-  void debug(String message) {
-    logger.d('[DEBUG] $message');
-  }
-
-  void info(String message) {
-    logger.i('[INFO] $message');
-  }
-
-  void warning(String message) {
-    logger.w('[WARNING] $message');
-  }
-
-  void error(String message, [dynamic error]) {
-    logger.e('[ERROR] $message');
+    d('Demo Log message');
+    i('Demo Info message');
+    w('Demo Warning!');
+    error('Demo something bad happened');
   }
 }

@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:can_immo/generated/i18n/app_localizations.dart';
 import 'package:can_immo/routes/app_pages.dart';
 import 'package:get/get.dart';
-import 'home_controller.dart';
 
-class HomeView extends GetView<HomeController> {
+class HomeView extends GetView {
   const HomeView({super.key});
 
   @override
@@ -23,7 +22,7 @@ class HomeView extends GetView<HomeController> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.restorablePushNamed(context, Routes.settings);
+          Navigator.restorablePushNamed(context, Routes.drawer);
         },
         child: const Icon(Icons.menu),
       ),
