@@ -1,5 +1,5 @@
-name: flutter_getx_scaffold
-description: "A new Flutter project."
+name: can_immo
+description: "SEO Immobilizer"
 
 publish_to: "none"
 
@@ -18,7 +18,7 @@ dependencies:
   flutter_svg: ^2.0.17
   cupertino_icons: ^1.0.8
 
-  # State management, dependencty injection, reactivity
+  # State management, dependency injection, reactivity
   get: ^4.7.2
 
   # Utilities

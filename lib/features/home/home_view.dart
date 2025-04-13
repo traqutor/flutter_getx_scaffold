@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_scaffold/generated/i18n/app_localizations.dart';
-import 'package:flutter_getx_scaffold/routes/app_pages.dart';
+import 'package:can_immo/generated/i18n/app_localizations.dart';
+import 'package:can_immo/routes/app_pages.dart';
 import 'package:get/get.dart';
 import 'home_controller.dart';
 

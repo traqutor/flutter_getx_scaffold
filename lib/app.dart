@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_scaffold/core/dependency_injection.dart';
+import 'package:can_immo/core/dependency_injection.dart';
 import 'package:get/get.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
-import 'package:flutter_getx_scaffold/modules/settings/settings_controller.dart';
-import 'package:flutter_getx_scaffold/generated/i18n/app_localizations.dart';
-import 'package:flutter_getx_scaffold/routes/app_pages.dart';
+import 'package:can_immo/theme/app_theme.dart';
+import 'package:can_immo/features/settings/settings_controller.dart';
+import 'package:can_immo/generated/i18n/app_localizations.dart';
+import 'package:can_immo/routes/app_pages.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           themeMode: controller.themeMode.value,
           locale: _parseLocale(controller.language.value),
-          theme: ThemeData.light(),
-          darkTheme: ThemeData.dark(),
+          theme: AppTheme.light,
+          darkTheme: AppTheme.dark,
 
           fallbackLocale: const Locale('en', 'US'),
 

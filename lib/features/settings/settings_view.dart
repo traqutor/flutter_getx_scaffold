@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:flutter_getx_scaffold/modules/settings/settings_controller.dart';
-import 'package:flutter_getx_scaffold/generated/i18n/app_localizations.dart';
+import 'package:can_immo/features/settings/settings_controller.dart';
+import 'package:can_immo/generated/i18n/app_localizations.dart';
 
 /// Settings view that provides UI for modifying app settings
 /// Converted to use GetX architecture while maintaining compatibility

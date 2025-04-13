@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:flutter_getx_scaffold/modules/not_found/not_found_view.dart';
-import 'package:flutter_getx_scaffold/modules/settings/settings_view.dart';
-import 'package:flutter_getx_scaffold/modules/home/home_binding.dart';
-import 'package:flutter_getx_scaffold/modules/home/home_view.dart';
+import 'package:can_immo/features/not_found/not_found_view.dart';
+import 'package:can_immo/features/settings/settings_view.dart';
+import 'package:can_immo/features/home/home_binding.dart';
+import 'package:can_immo/features/home/home_view.dart';
 
 part 'app_routes.dart';
 

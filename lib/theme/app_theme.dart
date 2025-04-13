@@ -52,7 +52,7 @@ class AppTheme {
   static final ThemeData dark = ThemeData(
     brightness: Brightness.dark,
     primaryColor: _darkPrimaryColor,
-    scaffoldBackgroundColor: const Color(0xFF121212),
+    scaffoldBackgroundColor: const Color.fromARGB(255, 0, 3, 52),
     appBarTheme: AppBarTheme(
       elevation: 0,
       backgroundColor: _darkPrimaryColor,
