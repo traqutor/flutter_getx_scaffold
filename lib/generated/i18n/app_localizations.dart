@@ -98,7 +98,7 @@ abstract class AppLocalizations {
   /// The app title
   ///
   /// In en, this message translates to:
-  /// **'[Title]'**
+  /// **'SEO Immobilizer'**
   String get appTitle;
 
   /// The label text for Settings
@@ -116,7 +116,7 @@ abstract class AppLocalizations {
   /// The Settings Title
   ///
   /// In en, this message translates to:
-  /// **'Settings Title'**
+  /// **'Settings'**
   String get settingsTitle;
 
   /// The Notifications Title

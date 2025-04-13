@@ -1,26 +1,30 @@
+import 'package:can_immo/theme/seo_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:can_immo/core/dependency_injection.dart';
 import 'package:get/get.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:can_immo/theme/app_theme.dart';
 import 'package:can_immo/features/settings/settings_controller.dart';
 import 'package:can_immo/generated/i18n/app_localizations.dart';
 import 'package:can_immo/routes/app_pages.dart';
+import 'package:can_immo/theme/seo_text_theme.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    TextTheme textTheme = createTextTheme(context, "Lato", "Lato");
+    MaterialTheme theme = MaterialTheme(textTheme);
+
     return GetBuilder<SettingsController>(
       builder: (controller) {
         return GetMaterialApp(
-          title: 'GetX App',
+          title: 'SEO CAN Immobilizer',
           debugShowCheckedModeBanner: false,
           themeMode: controller.themeMode.value,
           locale: _parseLocale(controller.language.value),
-          theme: AppTheme.light,
-          darkTheme: AppTheme.dark,
+          theme: theme.light(),
+          darkTheme: theme.dark(),
 
           fallbackLocale: const Locale('en', 'US'),
 

@@ -9,7 +9,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => '[Title]';
+  String get appTitle => 'SEO Immobilizer';
 
   @override
   String get settingsLabel => 'Settings';
@@ -18,7 +18,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get helloWorld => 'Hello World!';
 
   @override
-  String get settingsTitle => 'Settings Title';
+  String get settingsTitle => 'Settings';
 
   @override
   String get notificationsTitle => 'Notifications Title';

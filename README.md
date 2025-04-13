@@ -1,4 +1,4 @@
-# flutter_getx_scaffold
+# can_immo
 
 Let's create a comprehensive scaffold that includes state management with GetX, a robust navigation system, and internationalization with flutter_localizations.
 

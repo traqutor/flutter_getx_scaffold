@@ -9,7 +9,7 @@ class AppTheme {
   static final Color _lightSecondaryColor = Colors.blue.shade600;
   static const Color _lightOnPrimaryColor = Colors.white;
 
-  static const Color _darkPrimaryColor = Color(0xFF1F1F1F);
+  static const Color _darkPrimaryColor = Color.fromARGB(255, 0, 3, 52);
   static final Color _darkSecondaryColor = Colors.blue.shade700;
   static const Color _darkOnPrimaryColor = Colors.white;
 
@@ -52,7 +52,7 @@ class AppTheme {
   static final ThemeData dark = ThemeData(
     brightness: Brightness.dark,
     primaryColor: _darkPrimaryColor,
-    scaffoldBackgroundColor: const Color.fromARGB(255, 0, 3, 52),
+    scaffoldBackgroundColor: _darkPrimaryColor,
     appBarTheme: AppBarTheme(
       elevation: 0,
       backgroundColor: _darkPrimaryColor,
@@ -63,7 +63,7 @@ class AppTheme {
       primary: _darkPrimaryColor,
       secondary: _darkSecondaryColor,
       onPrimary: _darkOnPrimaryColor,
-      surface: const Color.fromARGB(255, 0, 3, 52),
+      surface: const Color.fromARGB(255, 16, 26, 192),
     ),
     textTheme: const TextTheme(
       displayLarge: TextStyle(

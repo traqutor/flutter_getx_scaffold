@@ -9,7 +9,7 @@ class AppLocalizationsPl extends AppLocalizations {
   AppLocalizationsPl([String locale = 'pl']) : super(locale);
 
   @override
-  String get appTitle => '[Nazwa]';
+  String get appTitle => 'SEO Kluczyk';
 
   @override
   String get settingsLabel => 'Ustawienia';

@@ -1,5 +1,5 @@
 {
-  "appTitle": "[Title]",
+  "appTitle": "SEO Immobilizer",
   "@appTitle": {
     "description": "The app title"
   },
@@ -11,7 +11,7 @@
   "@helloWorld": {
     "description": "The conventional newborn programmer greeting"
   },
-  "settingsTitle": "Settings Title",
+  "settingsTitle": "Settings",
   "@settingsTitle": {
     "description": "The Settings Title"
   },

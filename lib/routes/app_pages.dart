@@ -1,3 +1,4 @@
+import 'package:can_immo/features/settings/settings_binding.dart';
 import 'package:get/get.dart';
 import 'package:can_immo/features/not_found/not_found_view.dart';
 import 'package:can_immo/features/settings/settings_view.dart';
@@ -19,6 +20,7 @@ class AppPages {
     GetPage(
       name: Routes.settings,
       page: () => const SettingsView(),
+      binding: SettingsBinding(),
       transition: Transition.rightToLeft,
     ),
 

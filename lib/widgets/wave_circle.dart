@@ -32,8 +32,8 @@ class _WaveCircleState extends State<WaveCircle>
         return Opacity(
           opacity: 1.0 - _controller.value,
           child: Container(
-            width: 60 + _controller.value * 300,
-            height: 60 + _controller.value * 300,
+            width: 20 + _controller.value * 300,
+            height: 20 + _controller.value * 300,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               border: Border.all(color: useCurrentColor(context)),

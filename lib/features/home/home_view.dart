@@ -1,3 +1,4 @@
+import 'package:can_immo/widgets/wave_emitter.dart';
 import 'package:flutter/material.dart';
 import 'package:can_immo/generated/i18n/app_localizations.dart';
 import 'package:can_immo/routes/app_pages.dart';
@@ -15,27 +16,16 @@ class HomeView extends GetView<HomeController> {
           AppLocalizations.of(context)?.appTitle ?? 'Theme',
           style: Theme.of(context).textTheme.titleLarge,
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.bluetooth),
-            onPressed: () {
-              Navigator.restorablePushNamed(context, Routes.bleScan);
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () {
-              Navigator.restorablePushNamed(context, Routes.settings);
-            },
-          ),
-        ],
       ),
-      body: Center(
-        child: Obx(() => Text('Counter: ${controller.count.value}')),
+      body: Container(
+        decoration: const BoxDecoration(),
+        child: const Center(child: WaveEmitter()),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: controller.increment,
-        child: const Icon(Icons.add),
+        onPressed: () {
+          Navigator.restorablePushNamed(context, Routes.settings);
+        },
+        child: const Icon(Icons.menu),
       ),
     );
   }
