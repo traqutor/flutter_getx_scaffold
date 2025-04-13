@@ -5,7 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsController extends GetxController {
   final _prefs = Get.find<SharedPreferences>();
-  final logger = Get.find<LoggerService>();
+  final log = Get.find<LoggerService>();
 
   var themeMode = ThemeMode.system.obs;
   var language = 'en_US'.obs;
@@ -19,7 +19,7 @@ class SettingsController extends GetxController {
   void onInit() {
     super.onInit();
     loadSettings();
-    logger.demo();
+    log.demo();
   }
 
   void loadSettings() {

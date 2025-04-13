@@ -60,9 +60,9 @@ class CustomAdapterStateObserver extends NavigatorObserver {
 
   @override
   void didPop(Route route, Route? previousRoute) {
-    final logger = Get.find<LoggerService>();
+    final log = Get.find<LoggerService>();
     super.didPop(route, previousRoute);
     // Cancel the subscription when the route is popped
-    logger.debug('cancel subscriptions');
+    log.info('cancel subscriptions');
   }
 }
