@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_scaffold/core/dependency_injection.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsController extends GetxController {
   final _prefs = Get.find<SharedPreferences>();
+  final logger = Get.find<LoggerService>();
 
   var themeMode = ThemeMode.system.obs;
   var language = 'en_US'.obs;
@@ -17,6 +19,7 @@ class SettingsController extends GetxController {
   void onInit() {
     super.onInit();
     loadSettings();
+    logger.demo();
   }
 
   void loadSettings() {

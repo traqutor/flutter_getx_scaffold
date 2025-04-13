@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_scaffold/core/dependency_injection.dart';
 import 'package:get/get.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -59,8 +60,9 @@ class CustomAdapterStateObserver extends NavigatorObserver {
 
   @override
   void didPop(Route route, Route? previousRoute) {
+    final logger = Get.find<LoggerService>();
     super.didPop(route, previousRoute);
     // Cancel the subscription when the route is popped
-    print('cancel subscriptions');
+    logger.debug('cancel subscriptions');
   }
 }

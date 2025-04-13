@@ -63,8 +63,7 @@ class AppTheme {
       primary: _darkPrimaryColor,
       secondary: _darkSecondaryColor,
       onPrimary: _darkOnPrimaryColor,
-      background: const Color.fromARGB(255, 0, 3, 52),
-      surface: const Color(0xFF1E1E1E),
+      surface: const Color.fromARGB(255, 0, 3, 52),
     ),
     textTheme: const TextTheme(
       displayLarge: TextStyle(

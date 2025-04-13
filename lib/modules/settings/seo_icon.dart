@@ -16,7 +16,7 @@ class SeoIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SvgPicture.asset(
-      'assets/images/$icon.svg',
+      'assets/icons/$icon.svg',
       colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
       height: size,
     );
