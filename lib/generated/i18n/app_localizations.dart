@@ -107,29 +107,113 @@ abstract class AppLocalizations {
   /// **'Settings'**
   String get settingsLabel;
 
+  /// No description provided for @connectionStateActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Connected'**
+  String get connectionStateActive;
+
+  /// No description provided for @connectionStateDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Disabled'**
+  String get connectionStateDisabled;
+
+  /// About the application label
+  ///
+  /// In en, this message translates to:
+  /// **'About the application'**
+  String get aboutLabel;
+
+  /// Information Pin code is set
+  ///
+  /// In en, this message translates to:
+  /// **'PIN code'**
+  String get pinLabelSet;
+
+  /// Information Pin code is not set
+  ///
+  /// In en, this message translates to:
+  /// **'PIN code is not set'**
+  String get pinLabelUnset;
+
+  /// The state label
+  ///
+  /// In en, this message translates to:
+  /// **'State'**
+  String get stateLabel;
+
+  /// The theme label
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get themeLabel;
+
+  /// The advanced label
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced'**
+  String get advancedLabel;
+
+  /// The information label
+  ///
+  /// In en, this message translates to:
+  /// **'Information'**
+  String get informationLabel;
+
+  /// The paired phones label
+  ///
+  /// In en, this message translates to:
+  /// **'Paired Phones'**
+  String get pairedPhonesLabel;
+
+  /// The paired transmitters label
+  ///
+  /// In en, this message translates to:
+  /// **'Paired Transmitters'**
+  String get pairedTransmittersLabel;
+
+  /// CAN BUS program number
+  ///
+  /// In en, this message translates to:
+  /// **'CAN BUS program number'**
+  String get canBusNoLabel;
+
+  /// CAN BUS program date
+  ///
+  /// In en, this message translates to:
+  /// **'CAN BUS program date'**
+  String get canBusDateLabel;
+
+  /// Device Type
+  ///
+  /// In en, this message translates to:
+  /// **'Device type'**
+  String get canBusDeviceTypeLabel;
+
+  /// CAN BUS CPU S/N
+  ///
+  /// In en, this message translates to:
+  /// **'CAN BUS CPU S/N'**
+  String get canBusCpuSerialNoLabel;
+
+  /// BLE device program number
+  ///
+  /// In en, this message translates to:
+  /// **'BLE device program number'**
+  String get bleDeviceProgramNoLabel;
+
+  /// The notifications label
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get notificationsLabel;
+
   /// The conventional newborn programmer greeting
   ///
   /// In en, this message translates to:
   /// **'Hello World!'**
   String get helloWorld;
-
-  /// The Settings Title
-  ///
-  /// In en, this message translates to:
-  /// **'Settings'**
-  String get settingsTitle;
-
-  /// The Notifications Title
-  ///
-  /// In en, this message translates to:
-  /// **'Notifications Title'**
-  String get notificationsTitle;
-
-  /// The
-  ///
-  /// In en, this message translates to:
-  /// **'Theme Settings Title'**
-  String get themeSettingsTitle;
 
   /// The
   ///

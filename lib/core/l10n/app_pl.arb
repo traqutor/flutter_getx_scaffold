@@ -1,5 +1,5 @@
 {
-  "appTitle": "SEO Kluczyk",
+  "appTitle": "SEO Blokada samochodu",
   "@appTitle": {
     "description": "Nazwa aplikacji"
   },
@@ -7,21 +7,69 @@
   "@settingsLabel": {
     "description": "Ustawienia"
   },
+  "pairedPhonesLabel": "Połączone telefony",
+  "@pairedPhonesLabel": {
+    "description": "The paired phones label"
+  },
+  "pairedTransmittersLabel": "Połączone transmittery",
+  "@pairedTransmittersLabel": {
+    "description": "The paired transmitters label"
+  },
+  "canBusNoLabel": "CAN BUS program number",
+  "@canBusNoLabel": {
+    "description": "CAN BUS program number"
+  },
+  "canBusDateLabel": "CAN BUS program date",
+  "@canBusDateLabel": {
+    "description": "CAN BUS program date"
+  },
+  "canBusDeviceTypeLabel": "Device type",
+  "@canBusDeviceTypeLabel": {
+    "description": "Device Type"
+  },
+  "canBusCpuSerialNoLabel": "CAN BUS CPU S/N",
+  "@canBusCpuSerialNoLabel": {
+    "description": "CAN BUS CPU S/N"
+  },
+  "bleDeviceProgramNoLabel": "BLE device program number",
+  "@bleDeviceProgramNoLabel": {
+    "description": "BLE device program number"
+  },
+  "aboutLabel": "O aplikacji",
+  "@aboutLabel": {
+    "description": "About the application label"
+  },
+  "pinLabelSet": "PIN został ustawiony",
+  "@pinLabelSet": {
+    "description": "Information Pin code is set"
+  },
+  "pinLabelUnset": "PIN nie jest ustawiony",
+  "@pinLabelUnset": {
+    "description": "Information Pin code is not set"
+  },
+  "stateLabel": "Stan",
+  "@stateLabel": {
+    "description": "The state label"
+  },
+  "themeLabel": "Wygląd",
+  "@themeLabel": {
+    "description": "The theme label"
+  },
+  "advancedLabel": "Zaawansowane",
+  "@advancedLabel": {
+    "description": "The advanced label"
+  },
+  "informationLabel": "Informacje",
+  "@informationLabel": {
+    "description": "The information label"
+  },
+  "notificationsLabel": "Powiadomienia",
+  "@notificationsLabel": {
+    "description": "The notifications label"
+  },
   "helloWorld": "Hello World!",
   "@helloWorld": {
     "description": "The conventional newborn programmer greeting"
-  },
-  "settingsTitle": "Ustawienia",
-  "@settingsTitle": {
-    "description": "The Settings Title"
-  },
-  "notificationsTitle": "Powiadomienia",
-  "@notificationsTitle": {
-    "description": "Powiadomienia"
-  },
-  "themeSettingsTitle": "Wygląd",
-  "@themeSettingsTitle": {
-    "description": "Wygląd"
   },
   "themeSettingsSystemDescription": "Ustawienia wyglądu",
   "@themeSettingsSystemDescription": {

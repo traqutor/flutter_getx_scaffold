@@ -13,7 +13,7 @@ class SettingsView extends GetView<SettingsController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppLocalizations.of(context)?.settingsTitle ?? 'Settings'),
+        title: Text(AppLocalizations.of(context)?.settingsLabel ?? 'Settings'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
@@ -32,7 +32,7 @@ class SettingsView extends GetView<SettingsController> {
           const Divider(height: 32),
 
           Text(
-            AppLocalizations.of(context)?.themeSettingsTitle ?? 'Theme',
+            AppLocalizations.of(context)?.themeLabel ?? 'Theme',
             style: Theme.of(context).textTheme.titleMedium,
           ),
 
@@ -147,7 +147,7 @@ class SettingsView extends GetView<SettingsController> {
 
           // Notifications section (if you had this in your app)
           Text(
-            AppLocalizations.of(context)?.notificationsTitle ?? 'Notifications',
+            AppLocalizations.of(context)?.notificationsLabel ?? 'Notifications',
             style: Theme.of(context).textTheme.titleMedium,
           ),
 

@@ -7,21 +7,77 @@
   "@settingsLabel": {
     "description": "The label text for Settings"
   },
+  "connectionStateActive": "Connected",
+  "@deviceState": {
+    "description": "The label text for indication of connection active state"
+  },
+  "connectionStateDisabled": "Disabled",
+  "@deviceStateDisabled": {
+    "description": "The label text for indication of connection active state"
+  },
+  "aboutLabel": "About the application",
+  "@aboutLabel": {
+    "description": "About the application label"
+  },
+  "pinLabelSet": "PIN code",
+  "@pinLabelSet": {
+    "description": "Information Pin code is set"
+  },
+  "pinLabelUnset": "PIN code is not set",
+  "@pinLabelUnset": {
+    "description": "Information Pin code is not set"
+  },
+  "stateLabel": "State",
+  "@stateLabel": {
+    "description": "The state label"
+  },
+  "themeLabel": "Theme",
+  "@themeLabel": {
+    "description": "The theme label"
+  },
+  "advancedLabel": "Advanced",
+  "@advancedLabel": {
+    "description": "The advanced label"
+  },
+  "informationLabel": "Information",
+  "@informationLabel": {
+    "description": "The information label"
+  },
+  "pairedPhonesLabel": "Paired Phones",
+  "@pairedPhonesLabel": {
+    "description": "The paired phones label"
+  },
+  "pairedTransmittersLabel": "Paired Transmitters",
+  "@pairedTransmittersLabel": {
+    "description": "The paired transmitters label"
+  },
+  "canBusNoLabel": "CAN BUS program number",
+  "@canBusNoLabel": {
+    "description": "CAN BUS program number"
+  },
+  "canBusDateLabel": "CAN BUS program date",
+  "@canBusDateLabel": {
+    "description": "CAN BUS program date"
+  },
+  "canBusDeviceTypeLabel": "Device type",
+  "@canBusDeviceTypeLabel": {
+    "description": "Device Type"
+  },
+  "canBusCpuSerialNoLabel": "CAN BUS CPU S/N",
+  "@canBusCpuSerialNoLabel": {
+    "description": "CAN BUS CPU S/N"
+  },
+  "bleDeviceProgramNoLabel": "BLE device program number",
+  "@bleDeviceProgramNoLabel": {
+    "description": "BLE device program number"
+  },
+  "notificationsLabel": "Notifications",
+  "@notificationsLabel": {
+    "description": "The notifications label"
+  },
   "helloWorld": "Hello World!",
   "@helloWorld": {
     "description": "The conventional newborn programmer greeting"
-  },
-  "settingsTitle": "Settings",
-  "@settingsTitle": {
-    "description": "The Settings Title"
-  },
-  "notificationsTitle": "Notifications Title",
-  "@notificationsTitle": {
-    "description": "The Notifications Title"
-  },
-  "themeSettingsTitle": "Theme Settings Title",
-  "@themeSettingsTitle": {
-    "description": "The "
   },
   "themeSettingsSystemDescription": "Theme Settings System Description",
   "@themeSettingsSystemDescription": {

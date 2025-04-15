@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:can_immo/generated/i18n/app_localizations.dart';
 import 'package:can_immo/features/settings/settings_controller.dart';
+import 'package:can_immo/routes/app_pages.dart';
 
 /// Settings view that provides UI for modifying app settings
 class DrawerView extends GetView<SettingsController> {
@@ -13,17 +14,19 @@ class DrawerView extends GetView<SettingsController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppLocalizations.of(context)?.settingsTitle ?? 'Settings'),
+        title: Text(AppLocalizations.of(context)?.appTitle ?? 'System'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: <Widget>[
-
           Obx(() {
             return SwitchListTile(
               title: Text(
-                AppLocalizations.of(context)?.notificationsEnable ??
-                    'Enable notifications',
+                controller.isEmitting.value
+                    ? (AppLocalizations.of(context)?.connectionStateActive ??
+                        'Active')
+                    : (AppLocalizations.of(context)?.connectionStateDisabled ??
+                        'Disabled'),
               ),
               value: controller.isEmitting.value,
               onChanged: (value) => controller.toggleEmitting(),
@@ -32,186 +35,56 @@ class DrawerView extends GetView<SettingsController> {
 
           const Divider(height: 32),
 
-          Text(
-            AppLocalizations.of(context)?.themeSettingsTitle ?? 'Theme',
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
-
-          const SizedBox(height: 32),
-
-          Column(
-            children: [
-              // System theme option
-              _buildThemeListTile(
-                context,
-                title:
-                    AppLocalizations.of(context)?.themeSettingsSystem ??
-                    'System Theme',
-                subtitle:
-                    AppLocalizations.of(
-                      context,
-                    )?.themeSettingsSystemDescription ??
-                    'Follows system settings',
-                value: ThemeMode.system,
-                selected: controller.themeMode.value == ThemeMode.system,
-                onChanged: (selected) {
-                  if (selected) {
-                    controller.updateThemeMode(ThemeMode.system);
-                  }
-                },
-              ),
-
-              // Light theme option
-              _buildThemeListTile(
-                context,
-                title:
-                    AppLocalizations.of(context)?.themeSettingsLight ??
-                    'Light Theme',
-                subtitle:
-                    AppLocalizations.of(
-                      context,
-                    )?.themeSettingsLightDescription ??
-                    'Always use light theme',
-                value: ThemeMode.light,
-                selected: controller.themeMode.value == ThemeMode.light,
-                onChanged: (selected) {
-                  if (selected) {
-                    controller.updateThemeMode(ThemeMode.light);
-                  }
-                },
-              ),
-
-              // Dark theme option
-              _buildThemeListTile(
-                context,
-                title:
-                    AppLocalizations.of(context)?.themeSettingsDark ??
-                    'Dark Theme',
-                subtitle:
-                    AppLocalizations.of(
-                      context,
-                    )?.themeSettingsDarkDescription ??
-                    'Always use dark theme',
-                value: ThemeMode.dark,
-                selected: controller.themeMode.value == ThemeMode.dark,
-                onChanged: (selected) {
-                  if (selected) {
-                    controller.updateThemeMode(ThemeMode.dark);
-                  }
-                },
-              ),
-            ],
-          ),
-
-          const Divider(height: 8),
-
-          // Heading for Language section
-          Text(
-            AppLocalizations.of(context)?.languageSettingsTitle ?? 'Language',
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
-          const SizedBox(height: 8),
-
-          Column(
-            children: [
-              // English language option
-              _buildLanguageListTile(
-                context,
-                title: 'English',
-                value: 'en_US',
-                selected: controller.language.value == 'en_US',
-                onChanged: (selected) {
-                  if (selected) {
-                    controller.updateLanguage('en_US');
-                  }
-                },
-              ),
-
-              // Polish language option
-              _buildLanguageListTile(
-                context,
-                title: 'Polski',
-                value: 'pl_PL',
-                selected: controller.language.value == 'pl_PL',
-                onChanged: (selected) {
-                  if (selected) {
-                    controller.updateLanguage('pl_PL');
-                  }
-                },
-              ),
-
-              // More languages
-            ],
-          ),
-
-          const Divider(height: 8),
-
-          // Notifications section (if you had this in your app)
-          Text(
-            AppLocalizations.of(context)?.notificationsTitle ?? 'Notifications',
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
-
-          const SizedBox(height: 8),
-
-          SwitchListTile(
-            title: Text(
-              AppLocalizations.of(context)?.notificationsEnable ??
-                  'Enable notifications',
-            ),
-            value: controller.notificationsEnabled,
-            onChanged: (value) {
-              controller.updateNotifications(value);
+          GestureDetector(
+            onTap: () {
+              Navigator.restorablePushNamed(context, Routes.information);
             },
+            child: Card(
+              child: ListTile(
+                iconColor: Theme.of(context).colorScheme.primary,
+                leading: Icon(Icons.info),
+                title: Text(
+                  AppLocalizations.of(context)?.informationLabel ??
+                      'Information',
+                ),
+                subtitle: Text('Here is a second line'),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
+          ),
+
+          GestureDetector(
+            onTap: () {
+              Navigator.restorablePushNamed(context, Routes.settings);
+            },
+            child: Card(
+              child: ListTile(
+                leading: Icon(Icons.settings),
+                title: Text(
+                  AppLocalizations.of(context)?.settingsLabel ?? 'Settings',
+                ),
+                subtitle: Text('Here is a second line'),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
+          ),
+
+          GestureDetector(
+            onTap: () {
+              Navigator.restorablePushNamed(context, Routes.about);
+            },
+            child: Card(
+              child: ListTile(
+                leading: Icon(Icons.book),
+                title: Text(
+                  AppLocalizations.of(context)?.aboutLabel ?? 'About',
+                ),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
           ),
         ],
       ),
-    );
-  }
-
-  // Helper method to build a theme option list tile
-  Widget _buildThemeListTile(
-    BuildContext context, {
-    required String title,
-    required String subtitle,
-    required ThemeMode value,
-    required bool selected,
-    required ValueChanged<bool> onChanged,
-  }) {
-    return RadioListTile<ThemeMode>(
-      title: Text(title),
-      subtitle: Text(subtitle),
-      value: value,
-      groupValue: selected ? value : null,
-      onChanged: (ThemeMode? newValue) {
-        if (newValue != null) {
-          onChanged(true);
-        }
-      },
-      selected: selected,
-      activeColor: Theme.of(context).colorScheme.primary,
-    );
-  }
-
-  // Helper method to build a language option list tile
-  Widget _buildLanguageListTile(
-    BuildContext context, {
-    required String title,
-    required String value,
-    required bool selected,
-    required ValueChanged<bool> onChanged,
-  }) {
-    return RadioListTile<String>(
-      title: Text(title),
-      value: value,
-      groupValue: selected ? value : null,
-      onChanged: (String? newValue) {
-        if (newValue != null) {
-          onChanged(true);
-        }
-      },
-      selected: selected,
-      activeColor: Theme.of(context).colorScheme.primary,
     );
   }
 }

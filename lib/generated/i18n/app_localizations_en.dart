@@ -15,16 +15,58 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsLabel => 'Settings';
 
   @override
+  String get connectionStateActive => 'Connected';
+
+  @override
+  String get connectionStateDisabled => 'Disabled';
+
+  @override
+  String get aboutLabel => 'About the application';
+
+  @override
+  String get pinLabelSet => 'PIN code';
+
+  @override
+  String get pinLabelUnset => 'PIN code is not set';
+
+  @override
+  String get stateLabel => 'State';
+
+  @override
+  String get themeLabel => 'Theme';
+
+  @override
+  String get advancedLabel => 'Advanced';
+
+  @override
+  String get informationLabel => 'Information';
+
+  @override
+  String get pairedPhonesLabel => 'Paired Phones';
+
+  @override
+  String get pairedTransmittersLabel => 'Paired Transmitters';
+
+  @override
+  String get canBusNoLabel => 'CAN BUS program number';
+
+  @override
+  String get canBusDateLabel => 'CAN BUS program date';
+
+  @override
+  String get canBusDeviceTypeLabel => 'Device type';
+
+  @override
+  String get canBusCpuSerialNoLabel => 'CAN BUS CPU S/N';
+
+  @override
+  String get bleDeviceProgramNoLabel => 'BLE device program number';
+
+  @override
+  String get notificationsLabel => 'Notifications';
+
+  @override
   String get helloWorld => 'Hello World!';
-
-  @override
-  String get settingsTitle => 'Settings';
-
-  @override
-  String get notificationsTitle => 'Notifications Title';
-
-  @override
-  String get themeSettingsTitle => 'Theme Settings Title';
 
   @override
   String get themeSettingsSystemDescription => 'Theme Settings System Description';

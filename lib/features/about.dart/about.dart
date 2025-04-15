@@ -1,32 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class NotFoundView extends StatelessWidget {
-  const NotFoundView({super.key});
+class About extends StatelessWidget {
+  const About({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('error_not_found'.tr), centerTitle: true),
+      appBar: AppBar(title: Text('About'), centerTitle: true),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.error_outline,
+              Icons.book,
               size: 100,
-              color: Get.theme.colorScheme.error,
+              color: Get.theme.colorScheme.onPrimaryFixed,
             ),
             const SizedBox(height: 20),
             Text(
-              'error_not_found'.tr,
+              'About',
               style: Get.textTheme.headlineMedium,
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () => Get.offAllNamed('/'),
-              child: Text('nav_home'.tr),
+              child: Text('Home'),
             ),
           ],
         ),
