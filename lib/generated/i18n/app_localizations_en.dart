@@ -9,7 +9,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'SEO Immobilizer';
+  String get appTitle => 'CANblu';
 
   @override
   String get settingsLabel => 'Settings';
@@ -40,6 +40,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get informationLabel => 'Information';
+
+  @override
+  String get pairedDevicesNumberLabel => 'Paired Devices number';
 
   @override
   String get pairedPhonesLabel => 'Paired Phones';

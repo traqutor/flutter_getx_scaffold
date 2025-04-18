@@ -11,6 +11,7 @@ class SettingsController extends GetxController {
   var themeMode = ThemeMode.system.obs;
   var language = 'en_US'.obs;
   var notificationsEnabled = true;
+  var numberPairedDevices = 0.obs;
 
   static const String _themeModeKey = 'themeMode';
   static const String _languageKey = 'language';
@@ -28,6 +29,8 @@ class SettingsController extends GetxController {
   void stopEmitting() => isEmitting.value = false;
 
   void toggleEmitting() => isEmitting.toggle();
+
+  void setNumberPairedDevices(int no) => numberPairedDevices.value = no;
 
   void loadSettings() {
     final savedTheme = _prefs.getString(_themeModeKey);

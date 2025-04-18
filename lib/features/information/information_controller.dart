@@ -1,9 +1,7 @@
 import 'package:can_immo/core/dependency_injection.dart';
 import 'package:get/get.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class InformationController extends GetxController {
-  final _prefs = Get.find<SharedPreferences>();
   final log = Get.find<LoggerService>();
 
   /// user data
@@ -19,8 +17,6 @@ class InformationController extends GetxController {
   var canBusCpuSerialNo = "".obs;
   var bleDeviceProgramNo = "".obs;
 
-
-
   @override
   void onInit() {
     super.onInit();
@@ -28,8 +24,6 @@ class InformationController extends GetxController {
   }
 
   void loadInformation() {
-    log.d('Information view');
-    // TODO implement real data update
     pairPhonesNo.value = 3;
     pairTransmittersNo.value = 1;
     pairAllNo.value = 4;
@@ -39,7 +33,6 @@ class InformationController extends GetxController {
     canBusDeviceType.value = "335 77 A2";
     canBusCpuSerialNo.value = "006c00ac092030302D35325832424e";
     bleDeviceProgramNo.value = "2024/09/11 8e";
-
 
     update(); // Notify GetBuilder
   }

@@ -14,6 +14,7 @@ class SettingsView extends GetView<SettingsController> {
     return Scaffold(
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)?.settingsLabel ?? 'Settings'),
+        centerTitle: true,
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),

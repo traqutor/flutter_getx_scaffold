@@ -98,7 +98,7 @@ abstract class AppLocalizations {
   /// The app title
   ///
   /// In en, this message translates to:
-  /// **'SEO Immobilizer'**
+  /// **'CANblu'**
   String get appTitle;
 
   /// The label text for Settings
@@ -161,13 +161,19 @@ abstract class AppLocalizations {
   /// **'Information'**
   String get informationLabel;
 
-  /// The paired phones label
+  /// Paired devices counter number label
+  ///
+  /// In en, this message translates to:
+  /// **'Paired Devices number'**
+  String get pairedDevicesNumberLabel;
+
+  /// Paired phones label
   ///
   /// In en, this message translates to:
   /// **'Paired Phones'**
   String get pairedPhonesLabel;
 
-  /// The paired transmitters label
+  /// Paired transmitters label
   ///
   /// In en, this message translates to:
   /// **'Paired Transmitters'**

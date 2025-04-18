@@ -15,6 +15,7 @@ class DrawerView extends GetView<SettingsController> {
     return Scaffold(
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)?.appTitle ?? 'System'),
+        centerTitle: true,
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
@@ -47,8 +48,11 @@ class DrawerView extends GetView<SettingsController> {
                   AppLocalizations.of(context)?.informationLabel ??
                       'Information',
                 ),
-                subtitle: Text('Here is a second line'),
-                trailing: Icon(Icons.more_vert),
+                subtitle: Text(
+                  '${AppLocalizations.of(context)?.pairedDevicesNumberLabel ??
+                      'Number of paired Devices'} ${controller.numberPairedDevices}/8',
+                ),
+                trailing: Icon(Icons.arrow_forward_ios),
               ),
             ),
           ),

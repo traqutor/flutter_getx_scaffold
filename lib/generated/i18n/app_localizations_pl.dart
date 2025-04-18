@@ -9,16 +9,16 @@ class AppLocalizationsPl extends AppLocalizations {
   AppLocalizationsPl([String locale = 'pl']) : super(locale);
 
   @override
-  String get appTitle => 'SEO Blokada samochodu';
+  String get appTitle => 'CANblu';
 
   @override
   String get settingsLabel => 'Ustawienia';
 
   @override
-  String get connectionStateActive => 'Connected';
+  String get connectionStateActive => 'Połaczony';
 
   @override
-  String get connectionStateDisabled => 'Disabled';
+  String get connectionStateDisabled => 'Nie połączony';
 
   @override
   String get aboutLabel => 'O aplikacji';
@@ -40,6 +40,9 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get informationLabel => 'Informacje';
+
+  @override
+  String get pairedDevicesNumberLabel => 'Liczba połączonych urządzeń';
 
   @override
   String get pairedPhonesLabel => 'Połączone telefony';

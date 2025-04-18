@@ -1,4 +1,4 @@
-import 'package:can_immo/features/about.dart/about.dart';
+import 'package:can_immo/features/about.dart/about_view.dart';
 import 'package:can_immo/features/drawer/drawer_view.dart';
 import 'package:can_immo/features/information/information_binding.dart';
 import 'package:can_immo/features/information/information_view.dart';

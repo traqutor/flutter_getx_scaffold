@@ -1,11 +1,23 @@
 {
-  "appTitle": "SEO Blokada samochodu",
+  "appTitle": "CANblu",
   "@appTitle": {
     "description": "Nazwa aplikacji"
   },
   "settingsLabel": "Ustawienia",
   "@settingsLabel": {
     "description": "Ustawienia"
+  },
+  "connectionStateActive": "Połaczony",
+  "@deviceState": {
+    "description": "The label text for indication of connection active state"
+  },
+  "connectionStateDisabled": "Nie połączony",
+  "@deviceStateDisabled": {
+    "description": "The label text for indication of connection active state"
+  },
+  "pairedDevicesNumberLabel": "Liczba połączonych urządzeń",
+  "@pairedDevicesNumberLabel": {
+    "description": "Paired devices counter number label"
   },
   "pairedPhonesLabel": "Połączone telefony",
   "@pairedPhonesLabel": {

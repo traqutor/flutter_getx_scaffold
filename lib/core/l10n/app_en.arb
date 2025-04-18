@@ -1,5 +1,5 @@
 {
-  "appTitle": "SEO Immobilizer",
+  "appTitle": "CANblu",
   "@appTitle": {
     "description": "The app title"
   },
@@ -43,13 +43,17 @@
   "@informationLabel": {
     "description": "The information label"
   },
+  "pairedDevicesNumberLabel": "Paired Devices number",
+  "@pairedDevicesNumberLabel": {
+    "description": "Paired devices counter number label"
+  },
   "pairedPhonesLabel": "Paired Phones",
   "@pairedPhonesLabel": {
-    "description": "The paired phones label"
+    "description": "Paired phones label"
   },
   "pairedTransmittersLabel": "Paired Transmitters",
   "@pairedTransmittersLabel": {
-    "description": "The paired transmitters label"
+    "description": "Paired transmitters label"
   },
   "canBusNoLabel": "CAN BUS program number",
   "@canBusNoLabel": {
